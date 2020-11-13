@@ -5,16 +5,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Init Home</title>
+<title>Insert title here</title>
 </head>
 <body>
-<c:set var="contextPath" value="${ pageContext.servletContext.contextPath }" scope="application"/>
-
-	<script>
-		window.onload=function(){
-			location.href='home.do';
-		}
-	</script>
-
+<script type="text/javascript">
+	
+	
+</script>
+<!-- Navbar  -->
+<%-- <c:import url="common/menubar.jsp"/> --%>
+<c:import url="common/menubar2.jsp"/>
+<!-- About  -->
+<section id="contents">
+	
+</section>
 </body>
 </html>

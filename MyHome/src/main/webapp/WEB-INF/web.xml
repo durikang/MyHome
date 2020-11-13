@@ -30,11 +30,13 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+	
 	<!-- 모든 url 을 *.do로 매핑한다.  -->
 <servlet-mapping>
     <servlet-name>appServlet</servlet-name>
     <url-pattern>*.do</url-pattern>
   </servlet-mapping>
+  
   <!-- error 발생시 해당 페이지로 이동  -->
   <error-page>
     <exception-type>java.lang.Exception</exception-type>

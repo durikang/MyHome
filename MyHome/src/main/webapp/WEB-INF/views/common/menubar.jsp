@@ -14,7 +14,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-<c:set var="contextPath" value="${ pageContext.servletContext.contextPath }" scope="application"/>
 	
 <nav class="navbar">
 	<div class="navbar__logo">
