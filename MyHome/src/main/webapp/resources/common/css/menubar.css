@@ -60,18 +60,18 @@ a{
 		color:(--accent-color);
 }
 @media screen and (max-width:768px){
-	.navbar{
-		flex-direction: column;
-		align-items : flex-start;
-		padding: 8px 24px;
-	}
+.navbar{
+	flex-direction: column;
+	align-items : flex-start;
+	padding: 8px 24px;
+}
 	/* Menu  */
 .navbar__menu{
-		display:none;
-		flex-direction: column;
-		align-items:center;
-		width:100%;
-	}
+	display:none;
+	flex-direction: column;
+	align-items:center;
+	width:100%;
+}
 .navbar__menu li{
 	text-align: center;
 	width:100%;
