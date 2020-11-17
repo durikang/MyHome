@@ -11,6 +11,8 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="resources/common/css/menubar2.css">
 <script defer src="resources/common/js/menubar2.js"></script>
+<script src="https://kit.fontawesome.com/8af8965544.js"></script>
+
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
 
 </head>
@@ -20,24 +22,9 @@
 		'use strict';
 		let pageName="${pageName}";
 		
-		switch(pageName){
-		case "Home":
-			document.getElementById("home").style.color="green";
-			break;
-		case "About":
-            document.getElementById("about").style.color="green";
-			break;			
-		case "Major_Stack":
-            document.getElementById("major_stack").style.color="green";
-			break;
-		case "Mywork":
-            document.getElementById("mywork").style.color="green";
-			break;			
-		case "Contact":
-            document.getElementById("contact").style.color="green";
-			break;
-			
-		}
+		let checkMenu=document.getElementById(pageName).parentNode;
+		checkMenu.classList.add('active');
+		
 	}
 	
 	
@@ -50,21 +37,33 @@
 <c:url var="mywork" value="BD_mywork.do"/>
 <c:url var="contact" value="BD_contact.do"/>
 
-
 <nav id="navbar">
 	<div class="navbar__logo">
 		<img id="logo" src="resources/common/img/logo.ico">
 		<a href="#">Bansente</a>
 	</div>
 	<ul class="navbar__menu">
-		<li class="navbar__menu__item active"><a href="${ home }" id="home">Home</a></li>
-		<li class="navbar__menu__item"><a href="${ about }" id="about">About</a></li>
-		<li class="navbar__menu__item"><a href="${ major_stack }" id="major_stack">Major Stack</a></li>
-		<li class="navbar__menu__item"><a href="${ mywork }" id="mywork">My Work</a></li>
+		<li class="navbar__menu__item"><a href="${ home }" id="urlHome">Home</a></li>
+		<li class="navbar__menu__item"><a href="${ about }" id="urlAbout">About</a></li>
+		<li class="navbar__menu__item"><a href="${ major_stack }" id="urlMajor_stack">Major Stack</a></li>
+		<li class="navbar__menu__item"><a href="${ mywork }" id="urlmywork">My Work</a></li>
 		<li class="navbar__menu__item"><a href="">MyTechnology</a></li>
 		<li class="navbar__menu__item"><a href="">Project</a></li>
-		<li class="navbar__menu__item"><a href="${ contact }" id="contact">Contact</a></li>		
+		<li class="navbar__menu__item"><a href="${ contact }" id="urlcontact">Contact</a></li>		
 	</ul>
+		<ul class="navbar__icons">
+		<li>
+			<a href="https://blog.naver.com/kooda21" target="_blank">
+				<i class="fab fa-microblog"></i>
+			</a>
+		</li>
+		<li>
+			<a href="https://github.com/durikang" target="_blank">
+				<i class="fab fa-github"></i>
+			</a>
+		</li>
+	</ul>
+	<a href="#" class="navbar__toogleBtn"><i class="fas fa-bars"></i></a>
 </nav>
 
 </body>

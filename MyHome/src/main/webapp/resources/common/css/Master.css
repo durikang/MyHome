@@ -17,6 +17,12 @@
   --color-ashblonde:#D7BEA7;
   --color-kotoribeiz:#F5F5DC;
   --color-ashgray:#d1cfcf;
+  --color-lightblue:#a1c5ff;
+  --color-classicblue:#34558b;
+  --color-spruceblue:#283B42;
+  --color-spaceblue:#023459;
+  --color-lightgreen:#ceeaeb;
+  --color-bestgreen:#9DC8C8;
 	/*Font Size*/
   --font-large: 48px;
   --font-medium: 28px;
@@ -49,6 +55,13 @@ a{
 ul{
 	list-style:none;
 	padding-left:0;
+}
+
+button{
+	background-color:transparent;
+	cursor:pointer;
+	border:none;
+	outline: none;
 }
 
 

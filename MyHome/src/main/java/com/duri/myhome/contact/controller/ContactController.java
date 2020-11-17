@@ -10,7 +10,7 @@ public class ContactController {
 	@RequestMapping("BD_contact.do")
 	public ModelAndView ContactPage(ModelAndView mv) {
 		
-		mv.addObject("pageName", "Contact");
+		mv.addObject("pageName", "urlContact");
 		mv.setViewName("border/contact");
 		return mv;
 	}

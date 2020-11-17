@@ -12,7 +12,7 @@ public class AboutController {
 	@RequestMapping("BD_about.do")
 	public ModelAndView ContentsPage(ModelAndView mv) {	
 		
-		mv.addObject("pageName","About");
+		mv.addObject("pageName","urlAbout");
 		mv.setViewName("border/about");
 		
 		return mv;
