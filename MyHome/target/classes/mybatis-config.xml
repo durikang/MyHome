@@ -6,6 +6,13 @@
 		<setting name="jdbcTypeForNull" value="NULL"/>
 	</settings>
 	
+	<typeAliases>
+	    <typeAlias type="com.duri.myhome.login.model.vo.MemberVO" alias="Member"/>
+	</typeAliases>
+	
+	<mappers>
+	    <mapper resource="mappers/member-mapper.xml"/>
+	</mappers>
 
 	
 </configuration>

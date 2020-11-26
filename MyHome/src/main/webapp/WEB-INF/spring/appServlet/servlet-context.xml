@@ -32,6 +32,10 @@
 	</beans:bean>
 	
 		<context:component-scan base-package="com.duri.myhome" />
+		
+	<!-- NaverLoginBO Class에 대한 Bean설정 추가 -->
+	<beans:bean id="NaverLoginVO" class="com.duri.myhome.login.model.vo.NaverLoginVO" />
 	
+		
 	
 </beans:beans>
