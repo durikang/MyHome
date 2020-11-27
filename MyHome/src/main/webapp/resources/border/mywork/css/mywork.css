@@ -143,3 +143,16 @@
 .tesimonial__speech-bubble a{
 	color: var(--color-pink);
 }
+
+@media screen and (max-width: 968px){
+	
+	.project{
+		flex-grow: 1;
+	}
+	.testimonial__avatar{
+		width:80px;
+		height: 80px;
+	}
+	
+}
+

@@ -5,6 +5,7 @@
 #home{
 	background:url('../img/background1.png') center/cover no-repeat;
 	padding:40px;
+	padding-top:120px;
 	text-align:center;
 }
 .home__avatar{

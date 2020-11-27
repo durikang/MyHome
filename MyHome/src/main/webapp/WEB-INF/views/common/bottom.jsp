@@ -18,7 +18,7 @@
 
 <!-- CONTACT  -->
 
-	<section id="contact" class="section bottom">
+	<section data-link="#contact" id="contact" class="section bottom">
 		<h1 class="contact__title">Let's talk</h1>
 	
 		<p class="contact__rights">

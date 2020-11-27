@@ -25,15 +25,15 @@
 <h3>Projects</h3>
 <!-- 상단 categories  -->
 <div class="work__categories">
-	<button class="category__btn active"><span>All</span><span class="category__count"> 3 </span></button>	
-	<button class="category__btn"><span>Front-End</span><span class="category__count"> 0 </span></button>	
-	<button class="category__btn"><span>Back-End</span><span class="category__count"> 0 </span></button>	
-	<button class="category__btn"><span>Game</span><span class="category__count"> 0 </span></button>	
+	<button class="category__btn active" data-filter="*">All<span class="category__count"> 4 </span></button>	
+	<button class="category__btn" data-filter="seme">Seme-Project<span class="category__count"> 2 </span></button>	
+	<button class="category__btn" data-filter="final">Final-Project<span class="category__count"> 2 </span></button>	
+	<button class="category__btn" data-filter="game">Game<span class="category__count"> 0 </span></button>	
 </div>
 
 <!-- projects 시작  -->
 	<div class="container">
-		<div class="work__projects">
+		<div class="work__projects" data-type="semi">
 			<a href="https://www.erdcloud.com/d/niyRGfsuPatRLCT6q" class="project" target="_blank">
 				<img class="project__img" src="resources/border/mywork/img/semi-db.png"alt="영화-예약사이트">
 				<div class="project__description">
@@ -42,7 +42,7 @@
 				</div>
 			</a>
 		</div>
-		<div class="work__projects">
+		<div class="work__projects" data-type="semi">
 			<a href="https://github.com/durikang/TMIProject.git" class="project" target="_blank">
 				<img class="project__img" src="resources/border/mywork/img/moviePage(after).png" alt="영화-예약사이트">
 				<div class="project__description">
@@ -51,7 +51,7 @@
 				</div>
 			</a>
 		</div>
-		<div class="work__projects">
+		<div class="work__projects" data-type="final">
 			<a href="https://www.erdcloud.com/d/S7Nt94wnwjzxGjm8o" class="project" target="_blank">
 				<img class="project__img" src="resources/border/mywork/img/data-base(after).png" alt="랑데뷰-데이터베이스"/>
 				<div class="project__description">
@@ -61,7 +61,7 @@
 			</a>
 		</div>
 
-		<div class="work__projects">
+		<div class="work__projects" data-type="final">
 			<a href="https://github.com/durikang/Rendez-vous.git" class="project" target="_blank">
 				<img class="project__img" src="resources/border/mywork/img/managerPage(after).png" alt="랑데뷰,github">
 				<div class="project__description">

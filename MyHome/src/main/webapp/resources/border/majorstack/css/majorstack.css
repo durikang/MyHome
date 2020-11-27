@@ -53,3 +53,9 @@
 .tools,.etc{
 	padding:20px;
 }
+
+@media screen and (max-width: 968px){
+		.skillset{
+		flex-direction: column;
+	}
+}

@@ -2,9 +2,6 @@
 
 /* About */
 
-.aboutDescription{
-	
-}
 
 .about__majors {
 	display:flex;
@@ -56,4 +53,16 @@
 }
 .job__period{
 	font-size:var(--font-micro);
+}
+
+@media screen and (max-width: 968px){
+
+	.about__majors{
+		flex-direction: column;
+	}
+	.major{
+		margin-bottom:38px;
+	}
+
+	
 }
