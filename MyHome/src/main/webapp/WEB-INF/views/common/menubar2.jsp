@@ -16,6 +16,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+
+
+
 </head>
 <body>
 <script type="text/javascript">
@@ -51,8 +55,6 @@
 		<li class="navbar__menu__item"><a href="${ about }" id="urlAbout">About</a></li>
 		<li class="navbar__menu__item"><a href="${ major_stack }" id="urlMajor_stack">Major Stack</a></li>
 		<li class="navbar__menu__item"><a href="${ mywork }" id="urlMywork">My Work</a></li>
-		<li class="navbar__menu__item"><a href="">MyTechnology</a></li>
-		<li class="navbar__menu__item"><a href="">Project</a></li>
 		<c:if test="${ sessionScope.loginUser.mId eq 'kooda21' }">
 			<li class="navbar__menu__item"><a href="${ test }" id="urlTest">Test</a></li>
 		</c:if>

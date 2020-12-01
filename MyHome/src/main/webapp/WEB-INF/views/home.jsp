@@ -12,6 +12,22 @@
 	<script defer src="resources/MainHome/js/home.js" ></script>
 	<link rel="stylesheet" href="resources/MainHome/css/home.css">
 	<link rel="icon" type="image/x-icon" href="resources/MainHome/img/logo.ico" sizes="152x152">
+	
+<!-- <script type="text/javascript">
+	window.onload=function(){
+		const contactBtn=document.querySelector('.home__contact');
+		
+		contactBtn.addEventListener('click',()=>{
+			alert('클릭 확인');
+		});
+
+	
+	}
+		
+
+	
+	</script> -->
+	
 </head>
 <body>
 
@@ -26,10 +42,8 @@
 	
 	<h1 class="home__title">Hello,<br>I'm Duri Kang!</h1>
 	<h2 class="home__description">Back-End &#38; Front-End Developer</h2>
-	<button class="home__contact">Contact me</button>
-
-
-
+	<button class="home__contact" data-link="BD_contact.do" style="color:white;">Contact me</button>
+	
 </section>
 
 <!-- bottom  -->

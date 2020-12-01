@@ -7,16 +7,12 @@
 	var contact = document.querySelector('.home__contact');
 	
 	contact.addEventListener('click',(e)=>{
-		const link = target.dataset.link;
-		alert("확인");
+		const link = e.target.dataset.link;
 		if(link==null)
 			return;
+		location.href=link;
 		
-		scrollIntoViews(link);
 	});
 	
-	function scrollIntoViews(selector){
-		const scrollTo = document.querySelector(selector);
-		scrollTo.scrollIntoViews({behavior:"smooth"});
-	}
+	
 	

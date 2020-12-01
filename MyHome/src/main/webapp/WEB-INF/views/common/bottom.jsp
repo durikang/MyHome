@@ -23,8 +23,13 @@
 	
 		<p class="contact__rights">
 			<a href="https://blog.naver.com/kooda21">kooda21@naver.com</a>
-			2020 Dream Coding Duri - All rights reserved
 	
+		</p>
+		<p class="contact__rights">
+			2020 NicName Bansente My Real Name Duri Kang 
+		</p>
+		<p class="contact__rights">
+			- All rights reserved
 		</p>
 		<div class="contact__links">
 			<a href="https://github.com/durikang" target="_blank">

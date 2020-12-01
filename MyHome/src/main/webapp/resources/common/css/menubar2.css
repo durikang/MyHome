@@ -15,7 +15,7 @@
 	align-items:center;
 	padding:16px;
 	border-radius: 4px;
-	z-index: 1;
+	z-index: 3;
 	transition: all var(--animation-duration) ease-in-out;
 }
 #navbar.navbar--dark{
@@ -31,6 +31,9 @@
 	font-size:var(--font-medium);
 	font-weight:var(--weight-semi-bold);
 }
+.navbar__logo > a{
+	font-size:var(--font-medium);
+}
 
 .navbar__menu__item{
 	padding:8px 12px;
@@ -39,6 +42,7 @@
 }
 .navbar__menu__item.active{
 	border:1px solid var(--color-white);
+	color:var(--color-bootstrap-blue-hover);
 }
 .navbar__menu__item:hover{
 	background-color: var(--color-ashgray);
@@ -65,9 +69,9 @@
 .navbar__toogleBtn{
 		display:none;
 		position: absolute;
-		top:15px;
-		right: 32px;
-		font-size:24px;
+		top:16px;
+		right: 26px;
+		font-size:var(--font-medium);
 		color:(--accent-color);
 }
 
@@ -98,6 +102,9 @@
 	
 	justify-content: center;
 	width:100%;
+}
+.navbar__logo > a{
+	font-size:var(--font-large);
 }
 
   /* Icon  */

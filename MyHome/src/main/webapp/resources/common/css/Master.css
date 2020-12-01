@@ -16,6 +16,7 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
+  --color-none-black:#666666;
   --color-ashblonde:#D7BEA7;
   --color-kotoribeiz:#F5F5DC;
   --color-ashgray:#d1cfcf;
@@ -26,6 +27,8 @@
   --color-lightgreen:#ceeaeb;
   --color-bestgreen:#9DC8C8;
   --color-shineblue:#166cea; /*  */
+  --color-bootstrap-blue:#007bff;
+  --color-bootstrap-blue-hover:#0056b3;
   --color-more-shineblue:#5574a1; /*  */
 	/*Font Size*/
   --font-large: 48px;
@@ -33,6 +36,7 @@
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
+  --font-regular-vw:3vw;
 	/*Font weight*/
   --weight-bold: 700;
   --weight-semi-bold: 600;
@@ -46,8 +50,20 @@
 }
 
 /* Universal tags*/
+
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
 *{
 	box-sizing:border-box;
+	box-sizing: inherit;
 }
 body{
 	font-family: 'Noto Sans KR', sans-serif;
@@ -55,10 +71,13 @@ body{
 	/* font-family: 'Nanum Pen Script', cursive; */
 	margin: 0;
 	cursor:default;
+	height: 100%;
 	
 }
 	/*Typography*/
-	
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
@@ -81,15 +100,28 @@ h3 {
 }
 
 p {
-  font-size: var(--font-regular);
+  font-size: var(--font-regular-vw);
   font-weight: var(--weight-regular);
-  color: var(--color-black);
+  color: var(--color-none-black);
   margin: 4px 0;
 }
 
 a{
-	text-decoration: none;
+	margin:0px;
 	color:var(--color-white);
+	text-decoration: none;
+ 	background-color: transparent;
+  	-webkit-text-decoration-skip: objects;
+  	
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+  	
+  	
+}
+a:hover {
+  color: var(--color-bootstrap-blue-hover);
 }
 ul{
 	list-style:none;
@@ -101,6 +133,13 @@ button{
 	cursor:pointer;
 	border:none;
 	outline: none;
+}
+button:hover{
+	color:var(--color-bootstrap-blue-hover);
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
 }
 /* Common Logo */
 
@@ -125,6 +164,20 @@ button{
 .section__container{
 	max-width:1200px; /* 1000px ~ 1200px이 데스크탑에서 보기 편한 크기*/ 
 	
+}
+@media screen and (max-width: 968px) { 
+		/*Font Size*/
+:root{
+  --font-large: 30px;
+  --font-medium: 18px;
+  --font-regular: 16px;
+  --font-small: 14px;
+  --font-micro: 12px;
+}
+	
+	.section{
+		padding:16px;
+	}
 }
 
 
