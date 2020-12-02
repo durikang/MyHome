@@ -16,25 +16,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<script defer type="text/javascript">
+ 	window.onload=function(){
+ 		let pageName="${pageName}";
+ 		//Show "arrow up" button when scrolling down
+ 		// Arrow Button
+ 		var home = document.querySelector("#"+pageName);
+ 		var homeHeight=home.getBoundingClientRect().height;
+ 		const arrowBtn = document.querySelector('.arrow__up__button');
 
-
-
-
+ 		document.addEventListener('scroll',()=>{
+ 		    if(window.scrollY > homeHeight /4 ){
+ 		        arrowBtn.classList.add('visible');
+ 		    }else{
+ 		        arrowBtn.classList.remove('visible');
+ 		    }
+ 		});
+ 		function scrollIntoViews(selector){
+ 		    const scrollTo = document.querySelector(selector);
+ 		    scrollTo.scrollIntoView({ behavior:'smooth'});
+ 		}
+ 		arrowBtn.addEventListener('click',()=>{
+ 		    scrollIntoViews('#'+pageName);
+ 		});
+ 	}
+</script>
 </head>
 <body>
-<script type="text/javascript">
-	window.onload = function(){
-		let pageName="${pageName}";
-		if(pageName !== null)
-		{
-			let checkMenu=document.getElementById(pageName).parentNode;
-			checkMenu.classList.add('active');
-		}
-	}
-	
-	
-	
-</script>
+
 
 <c:url var="home" value="home.do"/>
 <c:url var="about" value="BD_about.do"/>
@@ -51,14 +60,14 @@
 		<a href="${ home }">Bansente</a>
 	</div>
 	<ul class="navbar__menu">
-		<li class="navbar__menu__item"><a href="${ home }" id="urlHome">Home</a></li>
-		<li class="navbar__menu__item"><a href="${ about }" id="urlAbout">About</a></li>
-		<li class="navbar__menu__item"><a href="${ major_stack }" id="urlMajor_stack">Major Stack</a></li>
-		<li class="navbar__menu__item"><a href="${ mywork }" id="urlMywork">My Work</a></li>
+		<li class="navbar__menu__item"><a href="${ home }" id="homeChecked">Home</a></li>
+		<li class="navbar__menu__item"><a href="${ about }" id="aboutChecked">About</a></li>
+		<li class="navbar__menu__item"><a href="${ major_stack }" id="major_stackChecked">Major Stack</a></li>
+		<li class="navbar__menu__item"><a href="${ mywork }" id="myworkChecked">My Work</a></li>
 		<c:if test="${ sessionScope.loginUser.mId eq 'kooda21' }">
-			<li class="navbar__menu__item"><a href="${ test }" id="urlTest">Test</a></li>
+			<li class="navbar__menu__item"><a href="${ test }" id="testChecked">Test</a></li>
 		</c:if>
-		<li class="navbar__menu__item"><a href="${ contact }" id="urlContact">Contact</a></li>		
+		<li class="navbar__menu__item"><a href="${ contact }" id="contactChecked">Contact</a></li>		
 	</ul>
 	<ul class="navbar__icons">
 		<c:if test="${ empty sessionScope.loginUser }">
@@ -80,6 +89,23 @@
 	</ul>
 	<a href="#" class="navbar__toogleBtn"><i class="fas fa-bars"></i></a>
 </nav>
+<!-- Arrow Up -->
+<button class="arrow__up__button">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<script type="text/javascript">
+
+	let pageName="${pageName}Checked";
+	if(pageName !== null)
+	{
+		let checkMenu=document.getElementById(pageName).parentNode;
+		checkMenu.classList.add('active');
+	}
+	
+	
+	
+</script>
+
 
 </body>
 </html>

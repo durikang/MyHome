@@ -11,7 +11,7 @@ public class TestController {
 	@RequestMapping("BD_test.do")
 	public ModelAndView TestPage(ModelAndView mv) {
 		
-		mv.addObject("pageName","urlTest");
+		mv.addObject("pageName","test");
 		mv.setViewName("border/test");
 		return mv;
 	}

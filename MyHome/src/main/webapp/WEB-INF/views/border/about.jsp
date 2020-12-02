@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="resources/border/about/css/about.css">
 <link rel="icon" type="image/x-icon" href="resources/MainHome/img/logo.ico" sizes="152x152">
 <title>About Me</title>
+
 </head>
 <body>
 <!-- Navbar  -->
@@ -20,7 +21,7 @@
 	<c:param name="pageName" value="${ pageName }"/>
 </c:import>
 <!-- About  -->
-<section id="About Me" class="section section__container">
+<section id="about" class="section section__container">
 	<h1>About me</h1>
 	<p class="aboutDescription">
 		안녕하세요. 저는 2018년 1월부터 프로그래밍 공부를 시작하였습니다.<br> 
@@ -65,5 +66,9 @@
 	</div>
 
 </section>
+
+
+
+
 </body>
 </html>

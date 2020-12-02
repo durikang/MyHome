@@ -13,21 +13,6 @@
 	<link rel="stylesheet" href="resources/MainHome/css/home.css">
 	<link rel="icon" type="image/x-icon" href="resources/MainHome/img/logo.ico" sizes="152x152">
 	
-<!-- <script type="text/javascript">
-	window.onload=function(){
-		const contactBtn=document.querySelector('.home__contact');
-		
-		contactBtn.addEventListener('click',()=>{
-			alert('클릭 확인');
-		});
-
-	
-	}
-		
-
-	
-	</script> -->
-	
 </head>
 <body>
 
@@ -45,8 +30,10 @@
 	<button class="home__contact" data-link="BD_contact.do" style="color:white;">Contact me</button>
 	
 </section>
-
 <!-- bottom  -->
 <c:import url="common/bottom.jsp"/>
+
+
+
 </body>
 </html>

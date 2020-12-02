@@ -16,7 +16,7 @@ public class HomeController {
 	@RequestMapping("home.do")
 	public ModelAndView home(ModelAndView mv) {
 		
-		mv.addObject("pageName", "urlHome");
+		mv.addObject("pageName", "home");
 		mv.setViewName("home");
 		return mv;
 	}

@@ -9,7 +9,7 @@ public class MyWorkController {
 	
 	@RequestMapping("BD_mywork.do")
 	public ModelAndView MyWorkPage(ModelAndView mv) {
-		mv.addObject("pageName", "urlMywork");
+		mv.addObject("pageName", "mywork");
 		mv.setViewName("border/mywork");
 		return mv;
 	}

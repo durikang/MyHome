@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
-#skill{
-	/* background-color: var(--color-yellow); */
+body{
 	background:url('../img/background2-yellow.png');
+}
+
+#major_stack{
+	/* background-color: var(--color-yellow); */
+	
 	width:100%;
 }
 .skillset{

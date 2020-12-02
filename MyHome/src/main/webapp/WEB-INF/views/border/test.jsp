@@ -52,5 +52,35 @@
 	<h4 style="text-align: center" id="email"></h4>
 	
 </section>
+
+
+<script defer type="text/javascript">
+ 	window.onload=function(){
+ 		let pageName="${pageName}";
+ 		//Show "arrow up" button when scrolling down
+ 		// Arrow Button
+ 		var home = document.querySelector("#"+pageName);
+ 		var homeHeight=home.getBoundingClientRect().height;
+ 		const arrowBtn = document.querySelector('.arrow__up__button');
+
+ 		document.addEventListener('scroll',()=>{
+ 		    if(window.scrollY > homeHeight /2 ){
+ 		        arrowBtn.classList.add('visible');
+ 		    }else{
+ 		        arrowBtn.classList.remove('visible');
+ 		    }
+ 		});
+ 		function scrollIntoViews(selector){
+ 		    const scrollTo = document.querySelector(selector);
+ 		    scrollTo.scrollIntoView({ behavior:'smooth'});
+ 		    selectNavItem(navItems[sectionIds.indexOf(selector)]);
+ 		}
+ 		arrowBtn.addEventListener('click',()=>{
+ 		    scrollIntoViews('#'+pageName);
+ 		});
+ 	}
+</script>
+
+
 </body>
 </html>

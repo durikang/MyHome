@@ -20,7 +20,7 @@
 	<c:param name="pageName" value="${ pageName }"/>
 </c:import>
 <!-- About  -->
-<section id="work" class="section section__container">
+<section id="mywork" class="section section__container">
 <h1>My Work</h1>
 <h3>Projects</h3>
 <!-- 상단 categories  -->
@@ -104,7 +104,6 @@
 		</div>
 	</div>
 </section>
-
 
 </body>
 </html>

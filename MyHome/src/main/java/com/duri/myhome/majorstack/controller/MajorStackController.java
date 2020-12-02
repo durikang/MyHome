@@ -10,7 +10,7 @@ public class MajorStackController {
 	@RequestMapping("BD_majorstack.do")
 	public ModelAndView MajorstackPage(ModelAndView mv) {
 		
-		mv.addObject("pageName","urlMajor_stack");
+		mv.addObject("pageName","major_stack");
 		mv.setViewName("border/majorstack");
 		
 		return mv;

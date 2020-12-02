@@ -23,7 +23,7 @@
 
 
 <!-- majorstack  -->
-<section id="skill" class="section">
+<section id="major_stack" class="section section__container">
 	<div class="section__conainer">
 	
 		<h1>Skills</h1>
@@ -126,6 +126,7 @@
 	
 	</div>
 </section>
+
 
 </body>
 </html>
